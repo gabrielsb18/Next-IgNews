@@ -1,5 +1,4 @@
 import Stripe from "stripe";
-import {version} from "../../package.json"
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -10,7 +9,7 @@ export const stripe = new Stripe(
     apiVersion: '2020-08-27',
     appInfo: {
       name: "igNews",
-      version
+      version: process.env.npm_package_version
     },
   }
 )
