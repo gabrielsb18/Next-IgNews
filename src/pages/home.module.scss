@@ -6,7 +6,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hero {
@@ -43,4 +43,10 @@
     margin-top: 2.4rem;
   }
 
+}
+
+@media (max-width: 1800px){
+  .contentContainer{
+    transform: scale(0.9);
+  }
 }
